@@ -1,0 +1,165 @@
+/* =Gallery
+-------------------------------------------------------------- */
+#qg-main-image {
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    }
+
+#qg-main-image .wp-caption-text {
+    display: block;
+    }
+
+#qg-main-image .gallery-item {
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+    padding: 0;
+    }
+
+#qg-main-image .gallery-item .gallery-caption {
+    height: auto;
+    padding: 20px;
+    }
+
+
+/* Prevents a weird, jump when images are not cached, this is the height of the image, plus the top, bottom border */
+#qg-image-target {
+    background-color: rgba(244, 244, 244, 1);
+    }
+
+
+.gallery {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    }
+
+.gallery br:last-child {
+    margin-bottom: 0;
+    }
+
+.gallery .gallery-item.current {
+    opacity: 1;
+    }
+
+.gallery .gallery-item .wp-caption-text {
+    display: none;
+    }
+
+.gallery .gallery-item:last-child() {
+    margin-right: 0;
+    }
+
+.gallery .gallery-item {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    opacity: .30;
+    padding: 0;
+    -webkit-transition: all 0.4s linear;
+     -moz-transition: all 0.4s linear;
+       -o-transition: all 0.4s linear;
+          transition: all 0.4s linear;
+    }
+
+.gallery .gallery-item.hover {
+    opacity: 1;
+    }
+
+.gallery .gallery-item.hover .gallery-caption {
+    display: block;
+    }
+
+.gallery .gallery-item img {
+    float: left;
+    margin: 0;
+    }
+
+.gallery .gallery-item .gallery-icon {
+    margin: 0 16px 16px 0;
+    max-width: 100%;
+    float: left;
+    }
+
+.gallery .gallery-item .gallery-caption {
+    display: none;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    overflow-y: scroll;
+    background: rgba(244, 244, 244, 1);
+    opacity: .8;
+    box-shadow: none;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    }
+
+.gallery .gallery-item .gallery-caption,
+.gallery .gallery-item .gallery-caption a {
+    color: #000;
+    }
+
+
+/*Our default gallery grid is 3 columns*/
+.gallery-columns-1 .gallery-item {
+    clear: both;
+    }
+
+.gallery-columns-2 .gallery-item {
+    width: 31%;
+    }
+
+.gallery-columns-3 .gallery-item {
+    width: 31%;
+    }
+
+.gallery-columns-4 .gallery-item {
+    width: 23.844%;
+    }
+
+.gallery-columns-5 .gallery-item {
+    width: 18.79%;
+    }
+
+.gallery-columns-6 .gallery-item {
+    width: 15.49%;
+    }
+
+.gallery-columns-7 .gallery-item {
+    width: 13.1%;
+    }
+
+.gallery-columns-8 .gallery-item {
+    width: 11.3%;
+    }
+
+.gallery-columns-9 .gallery-item {
+    width: 9.92%;
+    }
+
+/*We need to remove the right margin for the last item in
+each row*/
+.gallery-columns-1 .gallery-item:nth-child(1n+0),
+.gallery-columns-2 .gallery-item:nth-child(2n+0),
+.gallery-columns-3 .gallery-item:nth-child(3n+0),
+.gallery-columns-4 .gallery-item:nth-child(4n+0),
+.gallery-columns-5 .gallery-item:nth-child(5n+0),
+.gallery-columns-6 .gallery-item:nth-child(6n+0),
+.gallery-columns-7 .gallery-item:nth-child(7n+0),
+.gallery-columns-8 .gallery-item:nth-child(8n+0),
+.gallery-columns-9 .gallery-item:nth-child(9n+0) {
+    margin-right: 1px;
+    }
+
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+    display: none;
+    }
+/* =End
+-------------------------------------------------------------- */
